@@ -59,7 +59,7 @@ public class SecurityConfig {
         // 1. Allow your specific React frontend origin
         configuration.setAllowedOrigins(java.util.Arrays.asList(
                 "http://localhost:5173",                          // For local testing
-                "https://nexus-ems-akhil.netlify.app"     //  Netlify link 
+                "https://nexus-ems-akhil.netlify.app"     //  Netlify link
         ));
 
         // 2. Allow standard HTTP methods

@@ -26,6 +26,8 @@ public class DatabaseSeeder implements CommandLineRunner {
                     .username("admin")
                     .password(passwordEncoder.encode(defaultAdminPassword))
                     .role(Role.ROLE_ADMIN)
+                    .fullName("Sivagami Devi")
+                    .designation("Chief Human Resource Manager")
                     .build();
             userRepository.save(admin);
 
