@@ -57,7 +57,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         // 1. Allow your specific React frontend origin
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
+        configuration.setAllowedOrigins(java.util.Arrays.asList(
+                "http://localhost:5173",                          // For local testing
+                "https://nexus-ems-akhil.netlify.app"     //  Netlify link 
+        ));
 
         // 2. Allow standard HTTP methods
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
