@@ -1,0 +1,26 @@
+# System & OS Files
+.DS_Store
+Thumbs.db
+*.log
+
+# FRONTEND (nexus-ems-frontend)
+**/node_modules/
+**/dist/
+**/build/
+**/.env
+**/.env.local
+**/.vscode/
+**/.idea/
+
+# BACKEND (nexus-ems-backend)
+**/target/
+**/*.class
+**/logs/
+hs_err_pid*
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/.settings/
+**/.project
+**/.classpath
+**/*.iml
