@@ -21,6 +21,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        userRepository.findByUsername("admin").ifPresent(user -> userRepository.delete(user));
         if (userRepository.findByUsername("admin").isEmpty()) {
             User admin = User.builder()
                     .username("admin")
